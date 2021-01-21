@@ -1,0 +1,54 @@
+:root {
+  --base: '#000000';
+  --size: 50%;
+  --blur: 0px;
+  --invert: 0%;
+  --sepia: 0%;
+  --saturate: 100%;
+  --hue-rotate: 0deg;
+  --brightness: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+.content {
+  background: rgb(241, 172, 146);
+  height: 100vh;
+  display: flex;
+}
+
+.controls {
+  padding: 10rem 0 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+img {
+  width: var(--size);
+  border-radius: 5rem;
+  filter: blur(var(--blur)) invert(var(--invert)) sepia(var(--sepia)) saturate(var(--saturate))
+    brightness(var(--brightness)) hue-rotate(var(--hue-rotate));
+}
+
+label {
+  font-size: 2rem;
+}
+
+input {
+  display: block;
+}
+
+.img {
+  padding: 15rem 0 0 29rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--base);
+}
