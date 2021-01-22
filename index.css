@@ -1,6 +1,6 @@
 :root {
-  --base: '#000000';
-  --size: 50%;
+  --base: #f0e6b2;
+  --size: 45%;
   --blur: 0px;
   --invert: 0%;
   --sepia: 0%;
@@ -17,16 +17,16 @@
 }
 
 .content {
-  background: rgb(241, 172, 146);
+  background-color: var(--base);
   height: 100vh;
   display: flex;
 }
 
 .controls {
-  padding: 10rem 0 0 10rem;
+  padding: 5rem 0 0 10rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 img {
@@ -38,6 +38,7 @@ img {
 
 label {
   font-size: 2rem;
+  padding-bottom: 2rem;
 }
 
 input {
@@ -45,10 +46,12 @@ input {
 }
 
 .img {
-  padding: 15rem 0 0 29rem;
+  margin: 18rem 0 0 55rem;
 }
 
 h1 {
   font-size: 2.5rem;
   color: var(--base);
+  text-shadow: #000000 0 0 .7rem;
+  padding-bottom: 3rem;
 }
